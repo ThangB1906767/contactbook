@@ -1,0 +1,1 @@
+import{V as e}from"./index.85dc0df9.js";class r{constructor(){this.http=e("/api/users",!0)}async getAll(){return(await this.http.get("/")).data}async get(t){return(await this.http.get(`/find/${t}`)).data}async update(t,a){return(await this.http.put(`/${t}`,a)).data}async delete(t){return(await this.http.delete(`/${t}`)).data}}var n=new r;export{n as U};
